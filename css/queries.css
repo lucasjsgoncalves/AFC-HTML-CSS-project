@@ -1,0 +1,96 @@
+/**************************/
+/* BELOW 1420px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 88em) {
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+
+  .imgs_players {
+    /* display: none; */
+    width: 100%;
+  }
+
+  /* .imgs-player-queries {
+    display: block;
+    width: 100%;
+  } */
+}
+
+/**************************/
+/* BELOW 1100px (Landscape Tablets) */
+/**************************/
+@media (max-width: 69em) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .afc-heading {
+    grid-column: -1/1;
+    justify-self: center;
+  }
+
+  .hero-description {
+    grid-column: -1/1;
+  }
+
+  .btn {
+    width: 35%;
+    align-self: center;
+    justify-self: center;
+
+    text-align: center;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .estadio {
+    display: none;
+  }
+
+  .time-content-img {
+    grid-column: -1/1;
+  }
+
+  .time-description {
+    column-gap: 3.6rem;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .imgs_players {
+    display: none;
+  }
+
+  .imgs-player-queries {
+    display: block;
+    width: 100%;
+  }
+
+  .historia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .historia img {
+    width: 75%;
+    margin-bottom: 2.4rem;
+  }
+}

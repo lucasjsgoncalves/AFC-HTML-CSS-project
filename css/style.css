@@ -1,0 +1,241 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.4rem;
+  background-color: #00306b;
+}
+
+/* NAVIGATION */
+
+.logos-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-nav {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  padding: 1.2rem 0;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  padding-bottom: 0.6rem;
+  border-bottom: 0.2rem solid transparent;
+
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  border-bottom: 0.2rem solid #fff;
+}
+
+.images_qbs {
+  display: flex;
+  padding: 4.8rem;
+  /* background-color: #f82222; */
+  justify-content: center;
+}
+
+.times-links {
+  margin-bottom: 9.8rem;
+}
+
+.imgs_players {
+  border: 0.1rem solid #fff;
+}
+
+/* SECTION HERO */
+.section-hero {
+  padding: 6.4rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 180rem;
+  margin: 0 auto;
+  padding: 0rem 3.2rem;
+  display: grid;
+  grid-template-columns: 0.35fr 0.65fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-description {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  margin-bottom: 3.6rem;
+}
+
+.afc-heading {
+  color: #335989;
+}
+
+/* SECTION FEATURED */
+.section-featured {
+  display: flex;
+  padding-bottom: 9.6rem;
+}
+
+.logos {
+  height: 12.8rem;
+}
+
+/* SECTION TIMES */
+
+.section-times {
+  padding: 0 9.6rem;
+}
+
+.imgs-players-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.overlay img {
+  width: 100%;
+}
+
+.imgs-players-link:hover .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  row-gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.grey-out {
+  filter: grayscale(90%);
+}
+
+.time-text {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.time-btn {
+  font-size: 1.6rem;
+
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border: 0.2rem solid #fff;
+  border-radius: 3px;
+}
+
+.time-btn:hover {
+  color: #335989;
+  background-color: #fff;
+}
+
+/* With # */
+/* #00306B, #F82222, #000001, #F82525, #000100 */
+
+/* TIME DESCRIPTION */
+
+.time-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  row-gap: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.time-description img {
+  width: 100%;
+}
+
+.time-content {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.time-stats {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 0.1rem solid #335989;
+  border-radius: 5px;
+  padding: 2.4rem;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+
+  color: #444;
+}
+
+.time-stat {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  font-weight: 500;
+  gap: 1.2rem;
+}
+
+.title-stats {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* SECTION HISTORIA */
+
+.section-historia {
+  padding: 0 4.8rem 9.6rem 4.8rem !important;
+}
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+.historia-text {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
+.historia-img {
+  width: 100%;
+  align-self: center;
+}
+
+.btn-historia {
+  margin-top: 7.2rem;
+}
+/* SECTION FOOTER*/
+
+.footer {
+  background-color: #00306b;
+}
+
+.footer-logo {
+  padding: 2.4rem;
+  height: 12.8rem;
+}
