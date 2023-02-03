@@ -21,7 +21,7 @@
 /**************************/
 /* BELOW 1100px (Landscape Tablets) */
 /**************************/
-@media (max-width: 69em) {
+@media (max-width: 75em) {
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -65,6 +65,15 @@
   .time-description {
     column-gap: 3.6rem;
   }
+
+  .time-content {
+    display: none;
+  }
+
+  .time-content-mobile {
+    grid-column: -1/1;
+    display: block;
+  }
 }
 
 /* BELOW 944px (Tablets) */
@@ -92,5 +101,67 @@
   .historia img {
     width: 75%;
     margin-bottom: 2.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .section-times {
+    padding: 0;
+  }
+
+  .time-article {
+    padding: 0 2.4rem;
+  }
+
+  .images_qbs {
+    gap: 4.8rem;
+  }
+
+  .time-stats {
+    gap: 2.4rem;
+  }
+
+  .btn {
+    width: 60%;
+  }
+}
+
+/**************************/
+/* BELOW 576px (Phones) */
+/**************************/
+
+@media (max-width: 36em) {
+  .hero {
+    padding: 0;
+  }
+
+  .afc-heading {
+    text-align: center;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
+
+  .link-saiba {
+    font-size: 1.2rem;
+  }
+
+  .time-stats {
+    padding: 0;
+    font-size: 0.8rem;
+    flex-flow: row wrap;
+  }
+
+  .images_qbs {
+    padding: 0;
+  }
+
+  .time-article {
+    padding: 0;
   }
 }
