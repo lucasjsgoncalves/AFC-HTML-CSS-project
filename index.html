@@ -13,18 +13,27 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <script defer src="script.js"></script>
 
     <title>Conheça a AFC Oeste</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <a class="logos-nav" href="#">
         <img class="logo-nav" src="imgs/afc logo png.png" alt="" />
         <img class="logo-nav" src="imgs/nfl logo.svg" alt="" />
       </a>
 
-      <nav>
+      <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Raiders</a></li>
           <li><a class="main-nav-link" href="#">Chargers</a></li>
@@ -32,6 +41,11 @@
           <li><a class="main-nav-link" href="#">Chiefs</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <section class="section-hero">
@@ -200,7 +214,7 @@
 
             <img class="estadio" src="imgs/stadium-raiders.jpg" alt="" />
 
-            <div class="time-stats">
+            <div class="time-stats container">
               <div class="time-stat superbowls">
                 <p class="title-stats">Superbowls</p>
                 <p class="finals-sb">Disputados: 5</p>
@@ -283,7 +297,7 @@
 
             <img class="estadio" src="imgs/stadium-chargers.jpg" alt="" />
 
-            <div class="time-stats">
+            <div class="time-stats container">
               <div class="time-stat superbowls">
                 <p class="title-stats">Superbowls</p>
                 <p class="finals-sb">Disputados: 1</p>
@@ -359,7 +373,7 @@
 
             <img class="estadio" src="imgs/stadium-broncos.jpg" alt="" />
 
-            <div class="time-stats">
+            <div class="time-stats container">
               <div class="time-stat superbowls">
                 <p class="title-stats">Superbowls</p>
                 <p class="finals-sb">Disputados: 8</p>

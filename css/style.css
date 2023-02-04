@@ -5,6 +5,8 @@
   align-items: center;
   padding: 0 6.4rem;
   background-color: #00306b;
+
+  position: relative;
 }
 
 /* NAVIGATION */
@@ -45,7 +47,25 @@
 .main-nav-link:active {
   border-bottom: 0.2rem solid #fff;
 }
+/* MOBILE NAV */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
 
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/*  */
 .images_qbs {
   display: flex;
   padding: 2.4rem;
@@ -199,7 +219,7 @@
   flex-direction: column;
   font-size: 1.8rem;
   font-weight: 500;
-  gap: 1.2rem;
+  padding: 1.2rem;
 }
 
 .title-stats {
