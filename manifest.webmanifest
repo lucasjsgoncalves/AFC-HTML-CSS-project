@@ -1,0 +1,6 @@
+{
+  "icons": [
+    { "src": "imgs/NFL-favicon-192", "type": "image/png", "sizes": "192x192" },
+    { "src": "imgs/NFL-favicon-512", "type": "image/png", "sizes": "512x512" }
+  ]
+}

@@ -84,6 +84,10 @@
     font-size: 50%;
   }
 
+  .images_qbs p {
+    display: none;
+  }
+
   .imgs_players {
     display: none;
   }
@@ -108,7 +112,7 @@
   }
 
   .main-nav {
-    background-color: rgba(0, 48, 107, 0.96);
+    background-color: rgba(0, 48, 107, 0.98);
     position: absolute;
     top: 0;
     left: 0;

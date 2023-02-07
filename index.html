@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça todos os time da NFL quem fazem parte da AFC oeste"
+    />
+
+    <link rel="icon" href="imgs/NFL-favicon-small.png" />
+    <link rel="apple-touch-icon" href="imgs/NFL-favicon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap");
@@ -22,12 +30,17 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
     <script defer src="script.js"></script>
 
-    <title>Conheça a AFC Oeste</title>
+    <title>NFL &mdash; Conheça a AFC Oeste</title>
   </head>
   <body>
-    <header class="header nav-open">
+    <header class="header">
       <a class="logos-nav" href="#">
         <img class="logo-nav" src="imgs/afc logo png.png" alt="" />
         <img class="logo-nav" src="imgs/nfl logo.svg" alt="" />
@@ -35,10 +48,10 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Raiders</a></li>
-          <li><a class="main-nav-link" href="#">Chargers</a></li>
-          <li><a class="main-nav-link" href="#">Broncos</a></li>
-          <li><a class="main-nav-link" href="#">Chiefs</a></li>
+          <li><a class="main-nav-link" href="#raiders">Raiders</a></li>
+          <li><a class="main-nav-link" href="#chargers">Chargers</a></li>
+          <li><a class="main-nav-link" href="#broncos">Broncos</a></li>
+          <li><a class="main-nav-link" href="#chiefs">Chiefs</a></li>
         </ul>
       </nav>
 
@@ -66,12 +79,16 @@
         </div>
 
         <div class="img-box">
-          <img class="hero-img" src="imgs/mahomes_superbowl.jpg" alt="" />
+          <img
+            class="hero-img"
+            src="imgs/mahomes_afc.jpg"
+            alt="Pat Mahomes segura o troféu da AFC"
+          />
         </div>
       </div>
     </section>
 
-    <section class="section-times" id="times">
+    <section class="section-times section-transition" id="times">
       <div class="times-links">
         <h2 class="heading-secondary">Os Times</h2>
 
@@ -79,76 +96,87 @@
           <a class="imgs-players-link" data-time="raiders" href="#raiders">
             <img
               src="imgs/raiders-logo.png"
-              alt=""
+              alt="logo dos raiders"
               class="imgs-player-queries hidden"
             />
-            <img class="imgs_players time_raiders" src="imgs/carr.jpg" alt="" />
+
+            <img
+              class="imgs_players lazy-img time_raiders"
+              src="imgs/carr-lazy.webp"
+              data-src="imgs/carr.webp"
+              alt="Derek Carr no uniforme dos Raiders "
+            />
+
             <div class="overlay hidden">
               <p class="time-text">Raiders</p>
               <p class="time-btn">Saiba Mais</p>
-              <img src="imgs/raiders-logo.png" alt="" />
+              <img src="imgs/raiders-logo.png" alt="logo dos raiders" />
             </div>
           </a>
 
           <a class="imgs-players-link" data-time="chargers" href="#chargers">
             <img
               src="imgs/chargers-logo.png"
-              alt=""
+              alt="logo dos chargers"
               class="imgs-player-queries hidden"
             />
 
             <img
-              class="imgs_players time_chargers"
-              src="imgs/herbert.jpg"
-              alt=""
+              class="imgs_players lazy-img time_chargers"
+              src="imgs/herbert-lazy.webp"
+              data-src="imgs/herbert.webp"
+              alt="Justin Herbet com o uniforme dos chargers"
             />
+
             <div class="overlay hidden">
               <p class="time-text">Chargers</p>
               <p class="time-btn">Saiba Mais</p>
 
-              <img src="imgs/chargers-logo.png" alt="" />
+              <img src="imgs/chargers-logo.png" alt="logo dos chargers" />
             </div>
           </a>
 
           <a class="imgs-players-link" data-time="broncos" href="#broncos">
             <img
               src="imgs/broncos-logo.png"
-              alt=""
               class="imgs-player-queries hidden"
+              alt="logo dos Broncos"
             />
 
             <img
-              class="imgs_players time_broncos"
-              src="imgs/wilson.jpg"
-              alt=""
+              class="imgs_players lazy-img time_broncos"
+              src="imgs/wilson-lazy.webp"
+              data-src="imgs/wilson.webp"
+              alt="Russel Wilson com uniforme dos Broncos"
             />
 
             <div class="overlay hidden">
               <p class="time-text">Broncos</p>
               <p class="time-btn">Saiba Mais</p>
 
-              <img src="imgs/broncos-logo.png" alt="" />
+              <img src="imgs/broncos-logo.png" alt="logo dos Broncos" />
             </div>
           </a>
 
           <a class="imgs-players-link" data-time="chiefs" href="#chiefs">
             <img
               src="imgs/chiefs-logo.png"
-              alt=""
+              alt="logo dos Chiefs"
               class="imgs-player-queries hidden"
             />
 
             <img
-              class="imgs_players time_chiefs"
-              src="imgs/mahomes.jpg"
-              alt=""
+              class="imgs_players lazy-img time_chiefs"
+              src="imgs/mahomes-lazy.webp"
+              data-src="imgs/mahomes.webp"
+              alt="Patrick Mahomes com o uniforme dos Chiefs"
             />
 
             <div class="overlay hidden">
               <p class="time-text">Chiefs</p>
               <p class="time-btn">Saiba Mais</p>
 
-              <img src="imgs/chiefs-logo.png" alt="" />
+              <img src="imgs/chiefs-logo.png" alt="logo dos chiefs" />
             </div>
           </a>
         </div>
@@ -158,7 +186,12 @@
         <div class="time-descriptions container" id="raiders">
           <div class="heading-tertiary">Raiders</div>
           <div class="time-description">
-            <img class="time-content-img" src="imgs/game-raiders.jpg" alt="" />
+            <img
+              class="time-content-img lazy-img"
+              src="imgs/game-raiders-lazy.webp"
+              data-src="imgs/game-raiders.webp"
+              alt="raiders em partida"
+            />
             <p class="time-content">
               O Las Vegas Raiders é uma franquia profissional de futebol
               americano sediada na Região Metropolitana de Las Vegas, em Nevada.
@@ -212,7 +245,12 @@
               (1967) e três Super Bowls (XI, XV e XVIII).
             </p>
 
-            <img class="estadio" src="imgs/stadium-raiders.jpg" alt="" />
+            <img
+              class="estadio lazy-img"
+              src="imgs/stadium-raiders-lazy.webp"
+              data-src="imgs/stadium-raiders.webp"
+              alt=" estádio dos raiders"
+            />
 
             <div class="time-stats container">
               <div class="time-stat superbowls">
@@ -239,7 +277,12 @@
         <div class="time-descriptions container" id="chargers">
           <div class="heading-tertiary">Chargers</div>
           <div class="time-description">
-            <img class="time-content-img" src="imgs/game-chargers.jpg" alt="" />
+            <img
+              class="time-content-img lazy-img"
+              src="imgs/game-chargers-lazy.webp"
+              data-src="imgs/game-chargers.webp"
+              alt="chargers em partida"
+            />
             <p class="time-content">
               O time foi fundado em 14 de agosto de 1959 e começou a jogar em 10
               de setembro do mesmo ano, na temporada de 1960 da American
@@ -295,7 +338,12 @@
               (2001–2009).
             </p>
 
-            <img class="estadio" src="imgs/stadium-chargers.jpg" alt="" />
+            <img
+              class="estadio lazy-img"
+              src="imgs/stadium-chargers-lazy.webp"
+              data-src="imgs/stadium-chargers.webp"
+              alt="estádio chargers"
+            />
 
             <div class="time-stats container">
               <div class="time-stat superbowls">
@@ -322,7 +370,12 @@
         <div class="time-descriptions container" id="broncos">
           <div class="heading-tertiary">Broncos</div>
           <div class="time-description">
-            <img class="time-content-img" src="imgs/game-broncos.jpg" alt="" />
+            <img
+              class="time-content-img lazy-img"
+              src="imgs/game-broncos-lazy.webp"
+              data-src="imgs/game-broncos.webp"
+              alt="Broncos em partida"
+            />
             <p class="time-content">
               O Denver Broncos é uma franquia profissional de futebol americano
               sediada em Denver, Colorado. Os Broncos competem como um clube
@@ -371,7 +424,12 @@
               Bowl (1997 - XXXII, 1998 - XXXIII e 2015 - 50).
             </p>
 
-            <img class="estadio" src="imgs/stadium-broncos.jpg" alt="" />
+            <img
+              class="estadio lazy-img"
+              src="imgs/stadium-broncos-lazy.webp"
+              data-src="imgs/stadium-broncos.webp"
+              alt=" estádio broncos"
+            />
 
             <div class="time-stats container">
               <div class="time-stat superbowls">
@@ -398,7 +456,12 @@
         <div class="time-descriptions container" id="chiefs">
           <div class="heading-tertiary">Chiefs</div>
           <div class="time-description">
-            <img class="time-content-img" src="imgs/game-chiefs.jpg" alt="" />
+            <img
+              class="time-content-img lazy-img"
+              src="imgs/game-chiefs-lazy.webp"
+              data-src="imgs/game-chiefs.webp"
+              alt="chiefs em partida"
+            />
             <p class="time-content">
               O Kansas City Chiefs é um time profissional de futebol americano
               sediado em Kansas City, Missouri. Os Chiefs competem na NFL como
@@ -444,7 +507,12 @@
               décadas diferentes.
             </p>
 
-            <img class="estadio" src="imgs/stadium-chiefs.jpg" alt="" />
+            <img
+              class="estadio lazy-img"
+              src="imgs/stadium-chiefs-lazy.webp"
+              data-src="imgs/stadium-chiefs.webp"
+              alt="estadio chiefs"
+            />
 
             <div class="time-stats container">
               <div class="time-stat superbowls">
@@ -470,10 +538,18 @@
       </div>
     </section>
 
-    <section class="section-historia container" id="historia">
+    <section
+      class="section-historia container section-transition"
+      id="historia"
+    >
       <h2 class="heading-secondary">A história</h2>
       <div class="historia">
-        <img class="historia-img" src="imgs/nfl-afle-merger.jpg" alt="" />
+        <img
+          class="historia-img lazy-img"
+          src="imgs/nfl-afl-merger-lazy.webp"
+          data-src="imgs/nfl-afl-merger.webp"
+          alt="Pete Rozelle comemora a fusão AFL com a NFL"
+        />
 
         <div class="historia-text">
           <p class="time-content">
@@ -499,7 +575,7 @@
       </div>
     </section>
 
-    <section class="footer middle">
+    <section class="footer middle section-transition">
       <img class="footer-logo" src="imgs/nfl logo.svg" alt="" />
     </section>
   </body>
