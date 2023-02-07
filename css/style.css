@@ -215,7 +215,7 @@
 .team-content {
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #444;
+  color: #333;
   text-align: justify;
 }
 
@@ -263,7 +263,7 @@
 .historia-content {
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #333;
+  color: #222;
   text-align: justify;
 }
 
@@ -274,6 +274,7 @@
 
 .btn-historia {
   margin-top: 7.2rem;
+  background-color: #335989;
 }
 /* SECTION FOOTER*/
 
