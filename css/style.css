@@ -19,7 +19,6 @@
 
 .logo-nav {
   height: 3.2rem;
-  width: 3.2rem;
 }
 
 .main-nav-list {
@@ -57,7 +56,7 @@
 
   padding: 0 6.4rem;
 
-  background-color: rgba(0, 48, 107, 0.97);
+  background-color: rgba(0, 48, 107, 0.9);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
@@ -88,11 +87,11 @@
 .images_qbs {
   display: flex;
   padding: 2.4rem;
-  /* background-color: #f82222; */
+
   justify-content: center;
 }
 
-.times-links {
+.teams-links {
   margin-bottom: 9.8rem;
 }
 
@@ -141,7 +140,7 @@
 
 /* SECTION TIMES */
 
-.section-times {
+.section-teams {
   padding: 0 9.6rem;
 }
 
@@ -176,13 +175,13 @@
   filter: grayscale(90%);
 }
 
-.time-text {
+.team-text {
   font-size: 3.2rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
 }
 
-.time-btn {
+.team-btn {
   font-size: 1.6rem;
 
   color: #fff;
@@ -191,7 +190,7 @@
   border-radius: 3px;
 }
 
-.time-btn:hover {
+.team-btn:hover {
   color: #335989;
   background-color: #fff;
 }
@@ -201,7 +200,7 @@
 
 /* TIME DESCRIPTION */
 
-.time-description {
+.team-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.6rem;
@@ -209,18 +208,18 @@
   margin-bottom: 6.4rem;
 }
 
-.time-description img {
+.team-description img {
   width: 100%;
 }
 
-.time-content {
+.team-content {
   font-size: 1.8rem;
   line-height: 1.5;
   color: #444;
   text-align: justify;
 }
 
-.time-stats {
+.team-stats {
   grid-column: 1/-1;
   display: flex;
   justify-content: space-inbetween;
@@ -233,7 +232,7 @@
   color: #444;
 }
 
-.time-stat {
+.team-stat {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
@@ -259,6 +258,13 @@
 .historia-text {
   font-size: 2.2rem;
   line-height: 1.5;
+}
+
+.historia-content {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #333;
+  text-align: justify;
 }
 
 .historia-img {

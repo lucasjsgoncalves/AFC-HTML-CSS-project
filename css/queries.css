@@ -1,5 +1,5 @@
 /**************************/
-/* BELOW 1420px (Smaller desktops) */
+/* ABAIXO 1420px (desktops pequenos) */
 /**************************/
 
 @media (max-width: 88em) {
@@ -8,18 +8,12 @@
   }
 
   .imgs_players {
-    /* display: none; */
     width: 100%;
   }
-
-  /* .imgs-player-queries {
-    display: block;
-    width: 100%;
-  } */
 }
 
 /**************************/
-/* BELOW 1100px (Landscape Tablets) */
+/* ABAIXO 1100px (Tablets Paisagem) */
 /**************************/
 @media (max-width: 75em) {
   .hero {
@@ -58,25 +52,25 @@
     display: none;
   }
 
-  .time-content-img {
+  .team-content-img {
     grid-column: -1/1;
   }
 
-  .time-description {
+  .team-description {
     column-gap: 3.6rem;
   }
 
-  .time-content {
+  .team-content {
     display: none;
   }
 
-  .time-content-mobile {
+  .team-content-mobile {
     grid-column: -1/1;
     display: block;
   }
 }
 
-/* BELOW 944px (Tablets) */
+/* ABAIXO 944px (Tablets) */
 /**************************/
 
 @media (max-width: 59em) {
@@ -166,15 +160,15 @@
 }
 
 /**************************/
-/* BELOW 704px (Smaller tablets) */
+/* ABAIXO 704px (tablets pequenos) */
 /**************************/
 
 @media (max-width: 44em) {
-  .section-times {
+  .section-teams {
     padding: 0;
   }
 
-  .time-article {
+  .team-article {
     padding: 0 2.4rem;
   }
 
@@ -182,7 +176,7 @@
     gap: 4.8rem;
   }
 
-  .time-stats {
+  .team-stats {
     gap: 2.4rem;
   }
 
@@ -192,7 +186,7 @@
 }
 
 /**************************/
-/* BELOW 576px (Phones) */
+/* ABAIXO 576px (celulares) */
 /**************************/
 
 @media (max-width: 36em) {
@@ -212,7 +206,7 @@
     font-size: 1.2rem;
   }
 
-  .time-stats {
+  .team-stats {
     padding: 0;
     font-size: 0.8rem;
     flex-flow: row wrap;
@@ -222,7 +216,7 @@
     padding: 0;
   }
 
-  .time-article {
+  .team-article {
     padding: 0;
   }
 }

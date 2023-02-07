@@ -4,6 +4,8 @@ const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 const allLinks = document.querySelectorAll("a:link");
 const sectionHeroEl = document.querySelector(".section-hero");
+const navList = document.querySelector(".main-nav-list");
+
 // Overlay section teams
 times.addEventListener("mouseout", function (e) {
   players.forEach((el) => {
@@ -45,11 +47,17 @@ allLinks.forEach((link) => {
       document.querySelector(href).scrollIntoView({ behavior: "smooth" });
     }
   });
-  // Fechando mobile nav
+});
+// Fechando mobile nav
 
-  if (link.classList.contains("main-nav-link")) {
-    headerEl.classList.toggle("nav-open");
+navList.addEventListener("click", function (e) {
+  if (!e.target.classList.contains("main-nav-link")) return;
+
+  if (headerEl.classList.contains("nav-open")) {
+    document.querySelector(".images_qbs").classList.remove("opacity");
   }
+
+  headerEl.classList.toggle("nav-open");
 });
 
 // Sticky nav
@@ -99,8 +107,6 @@ allSections.forEach(function (section) {
 
 // Lazy loading images
 const imgTargets = document.querySelectorAll("img[data-src]");
-
-console.log(imgTargets);
 
 const loadImg = function (entries, observer) {
   entries.forEach((entry) => {
